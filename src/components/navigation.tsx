@@ -12,7 +12,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
-import { Users, Plus, Sparkles, Edit3, Library, User, Settings, LogOut, Menu, X, Search } from "lucide-react"
+import { Users, Plus, Sparkles, Edit3, Library, User, Settings, LogOut, Menu, X, Search, Compass } from "lucide-react"
 
 export function Navigation() {
   const pathname = usePathname()
@@ -24,6 +24,7 @@ export function Navigation() {
 
   const navItems = [
     { href: "/home", label: "Home", icon: Sparkles },
+    { href: "/explore", label: "Explorar", icon: Compass },
     { href: "/create", label: "Create", icon: Edit3 },
     { href: "/library", label: "Library", icon: Library },
     { href: "/community", label: "Community", icon: Users },

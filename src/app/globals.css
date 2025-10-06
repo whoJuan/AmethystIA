@@ -124,3 +124,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Mejora del renderizado de íconos SVG */
+svg {
+  shape-rendering: geometricPrecision;
+  vector-effect: non-scaling-stroke;
+}
+
+/* Ajuste de hover en gradientes */
+.group:hover img {
+  filter: brightness(1.1);
+}

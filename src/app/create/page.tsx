@@ -12,6 +12,7 @@ import { BookOpen, Wand2, Sparkles, Users, Target, Palette } from "lucide-react"
 import { Navigation } from "@/components/navigation"
 import { SetTheSceneForm } from "@/components/ai-tools/set-the-scene-form"
 import { TechnologyForm } from "@/components/ai-tools/technology-form"
+import { BookCreationForm } from "@/components/book-creation-form"
 
 export default function CreatePage() {
   const [projectType, setProjectType] = useState("book")
@@ -118,10 +119,6 @@ export default function CreatePage() {
                   <span>
                     {content.length} characters • {content.split(" ").filter((w) => w).length} words
                   </span>
-                  <Button variant="ghost" size="sm" className="text-purple-400 hover:bg-purple-800/20">
-                    <Wand2 className="h-4 w-4 mr-2" />
-                    AI Suggest
-                  </Button>
                 </div>
               </CardContent>
             </Card>
@@ -216,26 +213,9 @@ export default function CreatePage() {
               </CardContent>
             </Card>
 
-            {/* Recent Activity */}
-            <Card className="bg-black/40 border-purple-800/30 backdrop-blur-sm">
-              <CardHeader>
-                <CardTitle className="text-foreground">Recent Activity</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="flex items-center gap-3 text-sm">
-                  <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span className="text-muted-foreground">Auto-saved 2 min ago</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm">
-                  <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                  <span className="text-muted-foreground">AI suggestion applied</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm">
-                  <div className="w-2 h-2 bg-pink-400 rounded-full"></div>
-                  <span className="text-muted-foreground">Character created</span>
-                </div>
-              </CardContent>
-            </Card>
+            {/* Book Creation Form */}
+            <BookCreationForm />
+
           </div>
         </div>
       </div>

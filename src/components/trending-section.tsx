@@ -153,7 +153,7 @@ export function TrendingSection() {
                   </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
-                  {trendingContent.map((item, index) => (
+                  {trendingContent.map((item) => (
                     <div
                       key={item.id}
                       className="flex items-start gap-4 p-4 bg-background/30 rounded-lg hover:bg-background/50 transition-colors cursor-pointer group"

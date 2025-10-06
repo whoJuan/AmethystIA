@@ -132,15 +132,27 @@ export default function LandingPage() {
           <p className="text-xl text-purple-200">
             Join thousands of creators building the future of storytelling with AI
           </p>
-          <Link href="/register">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 glow-primary text-lg px-8 h-12"
-            >
-              Get started for free
-              <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/register">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 glow-primary text-lg px-8 h-12"
+              >
+                Get started for free
+                <ArrowRight className="w-5 h-5 ml-2" />
+              </Button>
+            </Link>
+            <Link href="/explore">
+              <Button
+                size="lg"
+                variant="outline"
+                className="text-lg px-8 h-12 border-purple-400/30 hover:border-purple-400 text-white bg-transparent hover:bg-white/5"
+              >
+                <BookOpen className="w-5 h-5 mr-2" />
+                Explore More
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
