@@ -650,7 +650,7 @@ export function BookCreationForm() {
           <div className="space-y-6">
             <div>
               <h4 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
-                <Image className="h-5 w-5 text-purple-400" alt="Image generation icon" />
+                <Image className="h-5 w-5 text-purple-400" />
                 Image Generation
               </h4>
               <div className="space-y-4">
